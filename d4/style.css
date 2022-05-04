@@ -1,0 +1,53 @@
+/* https://coolors.co/114b5f-135461-145d63-166f67-1a936f-88d498-c6dabf-dde2c9-f3e9d2 */
+
+section#intro {
+  background-color: #05181f;
+  color: white;
+  height: 100vh;
+}
+
+#intro h1 {
+  font-size: 96px;
+  animation: fadein ease-in 1s;
+}
+
+#intro h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+section#about {
+  background-color: #135461;
+  color: white;
+}
+#intro code {
+  font-size: 32px;
+  color: aqua;
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#intro #downArrow {
+  font-size: 75px;
+  position: absolute;
+  bottom: 30px;
+  color: white;
+}
